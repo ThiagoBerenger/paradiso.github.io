@@ -32,7 +32,7 @@ main {
 }
 
 .main-image img:hover{
-    filter: contrast(50%);
+    opacity: 50%;
 }
 
 /* -- video -- */
@@ -48,6 +48,18 @@ main {
     color: white;
     padding: 22px;
     position: absolute;
+}
+
+.text-main-video {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    color: white;
+    width: 1200px;
+    height: 600px;
+    background-color: rgba(255, 0, 0, 0.247);
 }
 
 video {
