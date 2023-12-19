@@ -1,0 +1,42 @@
+.content-trailer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-trailer {
+    padding: 4em;
+}
+
+.video-trailer video {
+    height: 100%;
+}
+
+/*--- Next Btn ---*/
+
+.next-btn, .prev-btn {
+    color: white;
+}
+
+/*--- section  --- */
+
+.taurus-text {
+    padding-bottom: 5em;
+    display: flex;
+    justify-content: center; 
+    cursor: pointer;  
+}
+
+.taurus-text h3 {
+    font-size: 22px;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.taurus-text h3:hover {
+    background-color: var(--grey-default);
+    color: var(--black-default);
+}
