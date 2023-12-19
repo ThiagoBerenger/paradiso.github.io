@@ -4,6 +4,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--font-default);
+}
+
+body {
+    background-color: var(--dark-grey);
+    height: 100vh;
 }
 
 :root  {
@@ -33,5 +39,67 @@ img {
 svg {
     width: 100%;
 }
+
+header {
+    padding: 1em;
+    display: flex;
+    height: 20%;
+    background-color: var(--black-default);
+}
+
+header h1{
+    color: var(--light-brown);
+    font-size: 40px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
+}
+
+ul{
+    height: 20%;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.icons-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.categories {
+    padding-top: 20px;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.search-div {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.search-div input {
+    padding: 5px;
+    border: 1px solid;
+    background-color: var(--dark-grey);
+    color: white;
+    border-radius: 5px;
+    display: none;
+}
+
+
+
+
 
 
