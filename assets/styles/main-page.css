@@ -44,6 +44,11 @@ main {
     box-shadow: 10px 10px 40px var(--black-default);
 }
    
+.main-video h3 {
+    color: white;
+    padding: 22px;
+    position: absolute;
+}
 
 video {
     object-fit: cover;
@@ -59,23 +64,37 @@ video {
 .male-female {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 50px;
     object-fit: cover;
-    width: 1200px;
+    width: 1300px;
     height: 600px;
 }
 
 .female-img {
     object-fit: cover;
-    width: 500px;
-    height: 300px;
+    cursor: pointer;
 }
 
 .male-img {
     object-fit: cover;
-    width: 500px;
-    height: 700px;
+    cursor: pointer;
 }
+
+.female-img h3{
+    padding: 22px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+.male-img h3{
+    padding: 22px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+}
+
+
 
 
 
