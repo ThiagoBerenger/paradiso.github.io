@@ -19,13 +19,13 @@ main {
     display: flex;
     justify-content: center;
     gap: 20px;
-    width: 100%;
-    height: auto;
+    width: 80%;
+    object-fit: cover;
 }
 
 .main-image img {
     object-fit: cover;
-    width: 500px;
+    width: 385px;
     height: 600px;
     border-radius: 20px;
     box-shadow: 10px 10px 40px var(--black-default);
@@ -70,14 +70,16 @@ video {
     height: 600px;
 }
 
-.female-img {
+.female-img img{
     object-fit: cover;
     cursor: pointer;
+    border-radius: 10px;
 }
 
-.male-img {
+.male-img img{
     object-fit: cover;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .female-img h3{
