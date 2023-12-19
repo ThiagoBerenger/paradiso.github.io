@@ -25,9 +25,10 @@
     box-shadow: 10px 10px 40px var(--black-default);
 }
 
-.main-image img:hover{
+.hover-effect:hover {
     opacity: 50%;
 }
+
 
 /* -- video -- */
 
@@ -39,6 +40,7 @@
     cursor: pointer;
 }
    
+
 .main-video h3 {
     color: white;
     padding: 22px;
@@ -53,9 +55,6 @@ video {
     box-shadow: 5px 5px 10px #00000025;
 }
 
-.main-video:hover {
-    opacity: 50%;
-}
 
 
 /* -- male-female selection -- */
@@ -94,6 +93,8 @@ video {
     position: absolute;
     cursor: pointer;
 }
+
+
 
 
 
