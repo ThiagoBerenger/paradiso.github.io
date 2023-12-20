@@ -34,8 +34,9 @@
 }
 
 .description p {
-    color: var(--flashback-green);
-    padding: 4em 2em 0 4em;
+    color: var(--default-black);
+    background-color: var(--flashback-pink);
+    margin: 4em 2em 0 4em;
 }
 
 .btn-season {
@@ -47,7 +48,6 @@
 
 .btn-exploreTaurus a,
 .btn-flashback a {
-    text-decoration: none;
     color: var(--flashback-green);
 }
 
@@ -55,39 +55,33 @@
     font-size: 18px;
     padding: 12px;
     color: var(--flashback-green);
-    border: 1px solid #ccc;
+    border: 2px solid var(--flashback-green);
     cursor: pointer;
     background: none;
 
     position: relative;
-    overflow: hidden;
     transition: 1s all ease;
-}
-
-.btn-exploreTaurus a:hover,
-.btn-flashback a:hover {
-    color: #0d0d0d;
 }
 
 .btn-exploreTaurus::before,
 .btn-flashback::before{
-    color: var(--flashback-green);
+    color: black;
     content: '';
-    width: 100%;
-    height: 100%;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+    left: 0%;
+    top: 90%;
+    background-color: var(--flashback-green);
+    
+
     transition: all .5s ease;
+    z-index: 1;
 }
 
 .btn-exploreTaurus::before,
 .btn-flashback::before
  {
     width: 0;
-    height: 100%;
+    height: 10%;
 }
 
 .btn-exploreTaurus:hover::before,
@@ -171,6 +165,7 @@
     height: 500px;
     background-image: radial-gradient(#ccc, white);
     padding: 8px;
+    cursor: pointer;
 }
 
 .clothing:hover {
