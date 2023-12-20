@@ -46,6 +46,7 @@
     color: white;
     padding: 22px;
     position: absolute;
+    letter-spacing: 8px;
 }
 
 video {
@@ -86,6 +87,7 @@ video {
     color: white;
     position: absolute;
     cursor: pointer;
+    letter-spacing: 8px;
 }
 
 .male-img h3{
@@ -93,8 +95,22 @@ video {
     color: white;
     position: absolute;
     cursor: pointer;
+    letter-spacing: 8px;
 }
 
+/* --- Flashback Season ---*/
+
+.main-flashback-video {
+    margin-bottom: 4em;
+    cursor: pointer;
+}
+
+.main-flashback-video h3 {
+    color: white;
+    padding: 22px;
+    position: absolute;
+    letter-spacing: 8px;
+}
 
 
 

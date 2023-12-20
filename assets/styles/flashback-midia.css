@@ -7,10 +7,9 @@
 }
 
 
-/*--- Taurus Season ---*/
+/*--- Flashback Season ---*/
 
 .flashback-title {
-    color: #Ccc;
     text-align: center;
     padding-top: 2em;
     color: var(--flashback-green);
@@ -20,20 +19,23 @@
 
 .flashback-main {
     margin: 0;
-    background-image: linear-gradient(var(--flashback-blue_2), var(--flashback-pink));
+    background-image: linear-gradient(var(--flashback-blue_2) 20%, var(--flashback-pink)50%);
+    height: 200vh;
 }
 
 .flashback-season {
     display: flex;
     flex-direction: row-reverse;
-    height: 100vh;
-    margin: 4em 4em 0 0em;
+    margin: 4em 4em 4em 0em;
+}
+
+.description {
+    width: 80%;
 }
 
 .description p {
     color: var(--flashback-green);
-    width: 80%;
-    padding: 4em 0 0 4em;
+    padding: 4em 2em 0 4em;
 }
 
 .btn-season {
@@ -92,3 +94,92 @@
 .btn-flashback:hover::before {
     width: 100%;
 }
+
+
+/* --- Video --- */
+
+.flashback-trailer {
+    width: 100vh;
+}
+
+
+/* --- Audio Controls --- */
+
+.audio-controls {
+    margin: 1em;
+    color: var(--flashback-orange);
+}
+
+.audio-controls i {
+    position: absolute;
+    background-color: var(--flashback-blue);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.397);
+    cursor: pointer;
+}
+
+.fa-solid.fa-volume-high {
+    display: flex;
+}
+
+.fa-solid.fa-volume-xmark {
+    display: none;
+}
+
+
+/*---scrollbar---*/
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    width: 10px;
+    background-image: linear-gradient(var(--flashback-blue), var(--flashback-pink));
+}
+
+
+/*---Products Section---*/
+
+.products-section {
+    margin: 6em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.products-section h1 {
+    padding: 2em;
+}
+
+.some-products {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    padding: 8px;
+}
+
+.some-products h2, p{
+    padding: 8px;
+    cursor: pointer;
+}
+
+.clothing {
+    width: 300px;
+    height: 500px;
+    background-image: radial-gradient(#ccc, white);
+    padding: 8px;
+}
+
+.clothing:hover {
+    box-shadow: 0px 1px 5px var(--light-brown);
+    filter: contrast(90%);
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+}
+

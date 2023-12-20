@@ -8,4 +8,9 @@ taurusBox.addEventListener('click', function() {
 })
 
 
+const flashBack = document.querySelector('.main-flashback-video')
+
+flashBack.addEventListener('click', function(){
+    window.location.href = './midia-page/flashback.html'
+})
 
