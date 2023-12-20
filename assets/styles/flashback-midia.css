@@ -1,26 +1,37 @@
+:root {
+    --flashback-pink: #D9A0AF;
+    --flashback-blue: #0378A6;
+    --flashback-blue_2: #739FD9;
+    --flashback-orange: #BF5F56;
+    --flashback-green: #012606;
+}
+
 
 /*--- Taurus Season ---*/
 
-.title {
+.flashback-title {
     color: #Ccc;
     text-align: center;
-    margin-top: 2em;
+    padding-top: 2em;
+    color: var(--flashback-green);
+    letter-spacing: 8px;
+    font-style: italic;
 }
 
-.taurus-season {
+.flashback-main {
+    margin: 0;
+    background-image: linear-gradient(var(--flashback-blue_2), var(--flashback-pink));
+}
+
+.flashback-season {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     height: 100vh;
-    margin: 4em 0 0 4em;
-}
-
-.taurus-season h1 {
-    margin: 1em;
-    color: white;
+    margin: 4em 4em 0 0em;
 }
 
 .description p {
-    color: #ccc;
+    color: var(--flashback-green);
     width: 80%;
     padding: 4em 0 0 4em;
 }
@@ -35,13 +46,13 @@
 .btn-exploreTaurus a,
 .btn-flashback a {
     text-decoration: none;
-    color: #ccc;
+    color: var(--flashback-green);
 }
 
 .btn-season button {
     font-size: 18px;
     padding: 12px;
-    color: var(--default-black);
+    color: var(--flashback-green);
     border: 1px solid #ccc;
     cursor: pointer;
     background: none;
@@ -58,7 +69,7 @@
 
 .btn-exploreTaurus::before,
 .btn-flashback::before{
-    background: #ccc;
+    color: var(--flashback-green);
     content: '';
     width: 100%;
     height: 100%;

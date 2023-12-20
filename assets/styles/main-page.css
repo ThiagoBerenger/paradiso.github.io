@@ -23,6 +23,7 @@
     height: 600px;
     border-radius: 20px;
     box-shadow: 10px 10px 40px var(--black-default);
+    cursor: pointer;
 }
 
 .hover-effect:hover {
@@ -65,7 +66,7 @@ video {
     gap: 50px;
     object-fit: cover;
     width: 1300px;
-    height: 600px;
+    height: 460px;
 }
 
 .female-img img{
