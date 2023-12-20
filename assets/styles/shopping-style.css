@@ -16,10 +16,12 @@
     padding: 0 60px 0 4px;
     height: 40px;
     letter-spacing: 2px;
+    line-height: 2px;
     text-transform: uppercase;
     border: 1px solid var(--light-brown);
+    border-radius: 6px;
+    cursor: pointer;
 }
-
 
 /* shooping section */
 
