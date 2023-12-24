@@ -35,10 +35,6 @@
     
 }
 
-#shopping-section a {
-    position: absolute;
-}
-
 @media (max-width:1300px) {
     #shopping-section {
        
