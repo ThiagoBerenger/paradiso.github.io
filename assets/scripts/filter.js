@@ -53,10 +53,28 @@ document.addEventListener("DOMContentLoaded", function () {
 // event mouse click href
 
 
+//Blue Dress
+
+const flashBlueDress = document.querySelector("#flashback-female-blue-dress")
+
+flashBlueDress.addEventListener ('click', function() {
+    window.location.href = './clothes-page/flashback-blue-dress-female.html'
+})
+
 
 //Bull Overcoat female
-const BullOvercoat = document.querySelector('.taurus female overcoats')
+const BullOvercoat = document.querySelector("#taurus-female-bull-overcoats")
 
-addEventListener ('click', function() {
+BullOvercoat.addEventListener ('click', function() {
     window.location.href = './clothes-page/taurus-bull-overcoat-female.html'
 })
+
+
+//Dark Blue Dress
+const darkBlueDress = document.querySelector("#taurus-darkblue-dress")
+
+darkBlueDress.addEventListener ('click', function() {
+    window.location.href = './clothes-page/taurus-dark-blue-dress-female.html'
+})
+
+
