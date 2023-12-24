@@ -1,11 +1,17 @@
-const firstImage = document.querySelector('image-1')
-const secondImage = document.querySelector('image-2')
+const firstImage = document.querySelector('.image-1')
+const secondImage = document.querySelector('.image-2')
 
-const arrowBtn = document.querySelector('.fa-cart-arrow-down')
+const toogleBtn = document.querySelector('.fa-arrow-right')
 
 
-secondImage.style.display = 'none'
 
-arrowBtn.addEventListener('click', () => {
-    secondImage.style.display = 'block'
-})
+toogleBtn.addEventListener('click', () => {
+    
+    if (firstImage.style.display === 'none') {
+        firstImage.style.display = 'block';
+        secondImage.style.display = 'none';
+    } else {
+        firstImage.style.display = 'none';
+        secondImage.style.display = 'block';
+    }
+});

@@ -59,5 +59,4 @@ const BullOvercoat = document.querySelector('.taurus female overcoats')
 
 addEventListener ('click', function() {
     window.location.href = './clothes-page/taurus-bull-overcoat-female.html'
-    console.log('clicou')
 })
