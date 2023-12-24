@@ -33,8 +33,11 @@
 
 /* -- video -- */
 
+
+
 .main-video {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     height: 600px;
     border-radius: 20px;
     box-shadow: 10px 10px 40px var(--black-default);
@@ -67,7 +70,7 @@ video {
     gap: 50px;
     object-fit: cover;
     width: 1300px;
-    height: 460px;
+    height: 400px;
 }
 
 .female-img img{
@@ -100,10 +103,15 @@ video {
 
 /* --- Flashback Season ---*/
 
+
 .main-flashback-video {
-    margin-bottom: 4em;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 3em 0;
     cursor: pointer;
 }
+
 
 .main-flashback-video h3 {
     color: white;
@@ -112,6 +120,248 @@ video {
     letter-spacing: 8px;
 }
 
+.main-flashback-video video {
+    width: 100%;
+}
+
+/* ------ Responsiviness ----- */ 
+@media (max-width: 1250px) {
+    
+    header {
+        width: 1250px;
+    }
+        
+
+    header h1 {
+        font-size: 35px;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-around;
+    } 
+    
+    h3 {
+        font-size: 20px;
+    }
+
+    .content {
+        width: 1250px;
+        
+    }
+
+    .main-image {
+        gap: 20px;
+    }
+
+    .main-image img {
+        width: 320px;
+    }
+
+    .main-video {
+        width: 1000px;
+    }
+
+    .main-video video {
+        width: 100%;
+    }
+
+    .male-female {
+        width: 1000px;
+    }
+
+    .female-img,
+    .male-img {
+        width: 500px;
+    }
+
+    .female-img img {
+        width: 100%;
+    }
+    
+    .male-img img {
+        width: 100%;
+    }
+
+    .main-flashback-video {
+        width: 1000px; 
+        margin-top: 0;
+    }
+
+    footer {
+        width: 1250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 20vh;
+    }
+
+    header h1 {
+        font-size: 70px;
+    }
+
+    #title {
+        display: flex;
+        align-items: center;
+    }
+
+    nav {
+    align-items: center;
+    }
+
+    nav h3 {
+        font-size: 27px;
+    }
+
+    nav ul li i{
+        font-size: 30px;
+    }   
+
+    .main-video h3 {
+        font-size: 36px;
+    }
+
+    .female-img h3 {
+        font-size: 36px;
+    }
+
+    .male-img h3 {
+        font-size: 36px;
+    }
+
+    .main-flashback-video h3 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    footer {
+        height: 30vh;
+    }
+
+    .footer-content h1{
+        padding-top: 20px;
+        font-size: 90px;
+    }
+
+    .footer-content ul {
+        gap: 50px;
+    }
+    .footer-content ul li {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 30vh;
+    }
+
+    nav {
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+    }
+    
+    .icons-header ul {
+        margin-left: 50px;
+        gap: 50px;
+    }
+
+    .icons-header i {
+        font-size: 50px;
+    }
+    
+    .categories {
+        display: none;
+    }
+
+    .main-image {
+        flex-wrap: wrap;
+
+    }
+    
+    .main-img-first,
+    .main-img-second {
+        width: 450px;
+    }
+
+    .main-img-third {
+        width: 920px;
+    }
+
+    .main-image img {
+        width: 100%;
+    }
+
+    .main-video {
+        width: 920px;
+    }
+
+    .male-female {
+        height: 500px;
+    }
+
+    .female-img,
+    .male-img {
+        width: 440px;
+        height: 500px;
+    }
+
+    .female-img img,
+    .male-img img {
+        height: 500px;
+    }
+        
+
+    footer {
+        height: 100vh;
+    }
+    
+    .footer-content h1 {
+        font-size: 100px;
+    }
+
+    .footer-content ul {
+        flex-direction: column;
+    }
+
+    .footer-content ul li {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 375px) {
+    header {
+        height: 40vh;
+    }
+
+    header h1 {
+        font-size: 100px;
+    }
+
+    .main-video h3 {
+        font-size: 50px;
+    }
+
+    .female-img h3,
+    .male-img h3 {
+        font-size: 50px;
+    }
+
+    .female-img img,
+    .male-img img {
+        height: 500px;
+    }
+
+    .footer-content h1 {
+        font-size: 150px;
+    }
+
+    .footer-content ul li {
+        font-size: 50px;
+    }
+}
 
 
 
