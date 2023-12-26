@@ -49,6 +49,20 @@ document.addEventListener("DOMContentLoaded", function () {
         
 });
 
+//-----------
+
+document.addEventListener('DOMContentLoaded', function() {
+    const urlParams = new URLSearchParams(window.location.search)
+    const genderSelect = document.querySelector("#gender-select")
+
+    if (urlParams.has('gender')) {
+        const selectedGender = urlParams.get('gender')
+
+        genderSelect.value = selectedGender
+    }
+});
+//------------
+
 
 // event mouse click href
 
@@ -84,6 +98,4 @@ const darkBlueDress = document.querySelector("#taurus-darkblue-dress")
 darkBlueDress.addEventListener ('click', function() {
     window.location.href = './clothes-page/taurus-dark-blue-dress-female.html'
 })
-
-
 

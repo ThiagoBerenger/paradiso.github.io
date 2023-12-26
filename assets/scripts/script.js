@@ -23,3 +23,19 @@ function toggleMenu() {
 }
 
 menuMobile.addEventListener('click', toggleMenu);
+
+
+
+
+
+// -------- Male --------- //
+
+
+const maleBtn = document.querySelector('.male')
+const genderSelect = document.querySelector("#gender-select")
+
+maleBtn.addEventListener('click', function() {
+
+    window.location.href = './shopping-page/shopping.html?gender=male'
+    genderSelect.value = 'male'
+})
