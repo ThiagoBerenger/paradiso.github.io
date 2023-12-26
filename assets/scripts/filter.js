@@ -61,6 +61,14 @@ flashBlueDress.addEventListener ('click', function() {
     window.location.href = './clothes-page/flashback-blue-dress-female.html'
 })
 
+//Blue Dress 2
+
+const flashBlueDress2 = document.querySelector('#flashback-female-blue-dress_2')
+
+flashBlueDress2.addEventListener('click', function() {
+    window.location.href = './clothes-page/flashback-blue-dress-female_2.html'
+})
+
 
 //Bull Overcoat female
 const BullOvercoat = document.querySelector("#taurus-female-bull-overcoats")
@@ -76,5 +84,6 @@ const darkBlueDress = document.querySelector("#taurus-darkblue-dress")
 darkBlueDress.addEventListener ('click', function() {
     window.location.href = './clothes-page/taurus-dark-blue-dress-female.html'
 })
+
 
 

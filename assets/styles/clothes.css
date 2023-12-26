@@ -37,8 +37,6 @@
     z-index: 1;
 }
 
-
-
 .item-text {
     display: flex;
     flex-direction: column;
@@ -52,6 +50,18 @@
 .item-text p {
     padding-top: 1em;
 }
+
+.bag-box {
+    margin-top: 40%;
+    padding: 1em;
+    align-items: center;
+    width: 60%;
+    border: 4px solid black;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+}
+
 
 .icons {
     display: flex;
@@ -69,6 +79,7 @@ i {
 
 /* ---animation--- */
 
-i:hover {
+.bag-box:hover {
     color: var(--light-brown);
+    border: 4px solid var(--light-brown);
 }
